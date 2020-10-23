@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #6a5acd;
+    --color-secondary: #16161B;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-secondary);
+}
+
+.card-container {
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card-container:hover, .card-container:hover .bottom {
+    transition: .8s ease;
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.card-container:hover .btn, .card-container:hover h4, .card-container:hover h3, .card-container:hover p {
+    transition: .4s ease;
+    color: #fff;
+}
+
+.top {
+    height: 80px;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.image-container img {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: ease 2s;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.bottom {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 80px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.bottom h3 {
+    line-height: 1.4;
+    color: var(--color-secondary);
+    margin-top: 5px;
+    font-size: 1.8rem;
+}
+
+.bottom h4 {
+    line-height: 1;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+.bottom p {
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+    line-height: 3;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: none;
+    text-decoration: none;
+    padding: 14px 30px;
+    color: var(--color-primary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    border: 1px solid #fff;
+}
